@@ -39,6 +39,10 @@ struct UserEntity {
         return completeAddress
     }
     
+    func getFullName() -> String {
+        firstname + lastname
+    }
+    
     func getGeolocation() -> UserLocationEntity {
         .init(latitude: Double(self.geoLocationLatitude)!, longitude: Double(self.geoLocationLongitude)!)
     }

@@ -14,9 +14,9 @@ protocol NewsListViewControllerProtocol: BaseViewControllerProtocol {
 }
 
 protocol NewsListPresenterProtocol {
-    var view: NewsListViewControllerProtocol? { get set }
-    var interactor: NewsListInteractorProtocol? { get set }
-    var router: NewsListRouterProtocol? { get set }
+//    var view: NewsListViewControllerProtocol? { get set }
+//    var interactor: NewsListInteractorProtocol? { get set }
+//    var router: NewsListRouterProtocol? { get set }
     
     func viewDidLoad()
     func didTapSearchButton(searchText: String)

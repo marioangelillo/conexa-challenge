@@ -42,10 +42,9 @@ extension UsersListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "UserTableViewCell", for: indexPath) as? UserTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "UserTableViewCell", for: indexPath) as? UserTableViewCell, let presenter = presenter else { return UITableViewCell() }
         
-        cell.title.text = presenter?.getUserItem(index: indexPath.row).firstname
-        
+        cell.setData(user: presenter.getUserItem(index: indexPath.row))
         return cell
     }
     
