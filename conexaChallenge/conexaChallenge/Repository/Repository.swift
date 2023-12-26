@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class Repository {
+    static let basicUrl = "https://jsonplaceholder.org"
+}
