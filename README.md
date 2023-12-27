@@ -1,5 +1,16 @@
 # conexa-challenge
 
+Imágenes de la aplicación.
+
+<img width="327" alt="image" src="https://github.com/marioangelillo/conexa-challenge/assets/74382519/e4551b2e-26bc-4d60-b11e-908a02cd7bdc">
+<img width="327" alt="image" src="https://github.com/marioangelillo/conexa-challenge/assets/74382519/6b470366-0440-4d66-92b8-33ff27abd532">
+<img width="327" alt="image" src="https://github.com/marioangelillo/conexa-challenge/assets/74382519/1f3d3ce6-bac7-4e5c-a19e-50fadd76e554">
+<img width="327" alt="image" src="https://github.com/marioangelillo/conexa-challenge/assets/74382519/b95d384d-275c-4cda-8d4a-66bf8220093a">
+
+Estructura de las carpetas del proyecto
+
+<img width="300" alt="image" src="https://github.com/marioangelillo/conexa-challenge/assets/74382519/cfa43dc4-16a5-4182-9f10-0ad9e06091b1">
+
 Para el desarrollo de esta aplicación se tuvo en cuenta las siguientes consideraciones.
 
 Patron de arquitectura: Opté por el patron de arquitectura Viper, si bien no es el patron de arquitectura mas sencillo, ofrece un gran desacoplamiento entre los distintos componentes de cada módulo. Esto no solo nos ofrece de que nuestra app pueda crecer de una forma prolija y ordenada, sino también la facilidad a la hora de realizar pruebas.
