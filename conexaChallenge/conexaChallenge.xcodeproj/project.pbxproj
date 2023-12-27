@@ -25,7 +25,6 @@
 		B386906D2B3BA95300DC316B /* NewsListServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386906C2B3BA95300DC316B /* NewsListServiceProtocol.swift */; };
 		B386906F2B3BA9AB00DC316B /* UsersListServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386906E2B3BA9AB00DC316B /* UsersListServiceProtocol.swift */; };
 		B38690732B3BAF2F00DC316B /* UsersListEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38690722B3BAF2F00DC316B /* UsersListEntityTests.swift */; };
-		B38690762B3BB45900DC316B /* NewsListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38690752B3BB45900DC316B /* NewsListServiceTests.swift */; };
 		B38690782B3BB46B00DC316B /* NewsListItemResponseDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38690772B3BB46B00DC316B /* NewsListItemResponseDTOTests.swift */; };
 		B3B947DF2B35E27E0067C5C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B947DE2B35E27E0067C5C9 /* AppDelegate.swift */; };
 		B3B947E12B35E27E0067C5C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B947E02B35E27E0067C5C9 /* SceneDelegate.swift */; };
@@ -89,7 +88,6 @@
 		B386906C2B3BA95300DC316B /* NewsListServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListServiceProtocol.swift; sourceTree = "<group>"; };
 		B386906E2B3BA9AB00DC316B /* UsersListServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListServiceProtocol.swift; sourceTree = "<group>"; };
 		B38690722B3BAF2F00DC316B /* UsersListEntityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListEntityTests.swift; sourceTree = "<group>"; };
-		B38690752B3BB45900DC316B /* NewsListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListServiceTests.swift; sourceTree = "<group>"; };
 		B38690772B3BB46B00DC316B /* NewsListItemResponseDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListItemResponseDTOTests.swift; sourceTree = "<group>"; };
 		B3B947DB2B35E27E0067C5C9 /* conexaChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = conexaChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B947DE2B35E27E0067C5C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -227,7 +225,6 @@
 		B38690742B3BB3DA00DC316B /* NewsListService */ = {
 			isa = PBXGroup;
 			children = (
-				B38690752B3BB45900DC316B /* NewsListServiceTests.swift */,
 				B38690772B3BB46B00DC316B /* NewsListItemResponseDTOTests.swift */,
 			);
 			path = NewsListService;
@@ -660,7 +657,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3725B002B3B4F05005B30A3 /* NewsListInteractorTests.swift in Sources */,
-				B38690762B3BB45900DC316B /* NewsListServiceTests.swift in Sources */,
 				B38690782B3BB46B00DC316B /* NewsListItemResponseDTOTests.swift in Sources */,
 				B3725B022B3B4F17005B30A3 /* NewsListEntityTests.swift in Sources */,
 				B3725AFE2B3A52B4005B30A3 /* NewsListPresenterTests.swift in Sources */,
