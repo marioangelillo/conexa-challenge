@@ -24,7 +24,6 @@ class MainTabBarController: UITabBarController {
         
         let images = ["newspaper", "person"]
         
-        // reemplazar directamente el string o hacer un bucle
         items[0].image = UIImage(systemName: images[0])
         items[1].image = UIImage(systemName: images[1])
     }
