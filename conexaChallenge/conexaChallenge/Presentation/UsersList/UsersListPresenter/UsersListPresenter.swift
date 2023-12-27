@@ -45,7 +45,7 @@ class UsersListPresenter: UsersListPresenterProtocol {
     
     func onErrorService(error: String) {
         view?.hideLoader()
-        print(error)
+        view?.showError(errorDescription: error)
     }
     
 }

@@ -32,11 +32,18 @@ class BaseViewController: UIViewController, BaseViewControllerProtocol {
         }
     }
     
+    func showError(errorDescription: String) {
+        let alert = UIAlertController(title: title, message: errorDescription, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(action)
+        present(alert, animated: true)
+    }
 }
 
 protocol BaseViewControllerProtocol {
     var loader: UIAlertController? { get set }
     func showLoader()
     func hideLoader()
+    func showError(errorDescription: String)
 }
 
