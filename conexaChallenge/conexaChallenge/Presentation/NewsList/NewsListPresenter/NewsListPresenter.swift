@@ -14,9 +14,9 @@ class NewsListPresenter: NewsListPresenterProtocol {
     var router: NewsListRouterProtocol?
     var interactor: NewsListInteractorProtocol?
     
-    private var allNews = [NewsEntity]()
+    var allNews = [NewsEntity]()
     
-    private var news: [NewsEntity] = [] {
+    var news: [NewsEntity] = [] {
         didSet {
             view?.reloadTableView()
         }
@@ -24,8 +24,8 @@ class NewsListPresenter: NewsListPresenterProtocol {
     
     func didTapSearchButton(searchText: String) {
         news = allNews.filter { news in
-            return news.title.lowercased().contains(searchText) ||
-            news.content.lowercased().contains(searchText)
+            return news.title.lowercased().contains(searchText.lowercased()) ||
+            news.content.lowercased().contains(searchText.lowercased())
         }
     }
     

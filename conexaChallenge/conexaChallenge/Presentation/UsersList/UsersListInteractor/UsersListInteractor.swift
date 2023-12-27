@@ -10,9 +10,14 @@ import Foundation
 class UsersListInteractor: UsersListInteractorProtocol {
     
     var presenter: UsersListPresenterProtocol?
+    let service: UsersListServiceProtocol
+    
+    init(service: UsersListServiceProtocol = UsersListService()) {
+        self.service = service
+    }
     
     func getUsersFromService() {
-        UsersListService().call { response in
+        service.call { response in
             let usersArray = response.map { $0.toEntity() }
             self.presenter?.onSuccessService(response: usersArray)
         } onError: { error in

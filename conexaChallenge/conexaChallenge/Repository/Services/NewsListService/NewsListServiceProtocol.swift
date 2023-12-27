@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol NewsListServiceProtocol {
+    func call(onSuceess: @escaping([NewsListItemResponseDTO]) -> Void, onError: @escaping(String) -> Void)
+}

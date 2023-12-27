@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol UsersListServiceProtocol {
+    func call(onSuceess: @escaping([UsersListItemResponseDTO]) -> Void, onError: @escaping(String) -> Void)
+}

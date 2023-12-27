@@ -10,9 +10,14 @@ import Foundation
 class NewsListInteractor: NewsListInteractorProtocol {
     
     var presenter: NewsListPresenterProtocol?
+    let service: NewsListServiceProtocol
+    
+    init(service: NewsListServiceProtocol = NewsListService()) {
+        self.service = service
+    }
     
     func getNewsFromService() {
-        NewsListService().call { responseDTO in
+        service.call { responseDTO in
             let newsArray = responseDTO.map { $0.toEntity() }
             self.presenter?.onSuccessService(response: newsArray)
         } onError: { error in

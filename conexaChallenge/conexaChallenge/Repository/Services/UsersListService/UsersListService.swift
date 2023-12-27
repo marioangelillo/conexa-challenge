@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-class UsersListService {
+class UsersListService: UsersListServiceProtocol {
     
     func call(onSuceess: @escaping([UsersListItemResponseDTO]) -> Void, onError: @escaping(String) -> Void) {
         

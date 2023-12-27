@@ -40,7 +40,7 @@ struct UserEntity {
     }
     
     func getFullName() -> String {
-        firstname + lastname
+        firstname + " " + lastname
     }
     
     func getGeolocation() -> UserLocationEntity {

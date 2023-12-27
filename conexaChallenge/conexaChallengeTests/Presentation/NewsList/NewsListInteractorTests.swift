@@ -12,7 +12,6 @@ import XCTest
 class NewsListInteractorTests: XCTestCase {
     
     func testGetNewsFromService_Success() {
-        
         // Arrange
         let newsListServiceMock = NewsListServiceMock(withError: false)
         let interactor = NewsListInteractor(service: newsListServiceMock)
@@ -24,11 +23,9 @@ class NewsListInteractorTests: XCTestCase {
         
         // Assert
         XCTAssertTrue(presenter.onSuccessServiceCalled)
-        
     }
     
     func testGetNewsFromService_Error() {
-    
         // Arrange
         let newsListServiceMock = NewsListServiceMock(withError: true)
         let interactor = NewsListInteractor(service: newsListServiceMock)
@@ -43,10 +40,9 @@ class NewsListInteractorTests: XCTestCase {
     }
 }
 
-
 class NewsListServiceMock: NewsListServiceProtocol {
     
-    let newsListDTO = [NewsListItemResponseDTO(id: 1, slug: "slug", url: "http1://image1", title: "titulo1", content: "contenido1", image: "http1://image1", thumbnail: "http1://image1/200x200", status: "published", category: "economy", publishedAt: "20-12-2023", updatedAt: "22-12-2023", userId: 1)]
+    let newsListDTO = [conexaChallenge.NewsListItemResponseDTO(id: 1, slug: "slug", url: "http1://image1", title: "titulo1", content: "contenido1", image: "http1://image1", thumbnail: "http1://image1/200x200", status: "published", category: "economy", publishedAt: "20-12-2023", updatedAt: "22-12-2023", userId: 1)]
     
     let withError: Bool
     
@@ -54,14 +50,13 @@ class NewsListServiceMock: NewsListServiceProtocol {
         self.withError = withError
     }
     
-    func call(onSuceess: @escaping ([NewsListItemResponseDTO]) -> Void, onError: @escaping (String) -> Void) {
+    func call(onSuceess: @escaping ([conexaChallenge.NewsListItemResponseDTO]) -> Void, onError: @escaping (String) -> Void) {
         if withError {
             onError("Error al llamar el servicio")
         } else {
             onSuceess(newsListDTO)
         }
     }
-    
 }
 
 class NewsListPresenterMock: NewsListPresenterProtocol {
